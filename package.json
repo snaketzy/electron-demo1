@@ -1,10 +1,20 @@
 {
   "name": "pomodoro",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "license": "MIT",
+  "scripts": {
+    "package":"electron-builder --dir",
+    "build":"electron-builder"
+  },
   "dependencies": {
-    "electron": "^37.3.1",
     "timer.js": "^1.0.4"
+  }, 
+  "devDependencies": {
+    "electron": "^37.3.1",
+    "electron-builder": "25.0.0"
+  },
+  "resolutions": {
+    "minimatch": "9.0.5"
   }
 }
